@@ -1,0 +1,16 @@
+Ideen codeinstitute first milestone project
+
+MAIN PURPOSE WEBSITE:
+Website in order to have a chill evening with your friends. Some usefull tips and tricks are given
+
+TOPICS:
+- Location: give an example of good location to chill
+- Drinks: Multiple examples of drinks to use
+- Food: Multiple examples what type of food is good to use/serve
+- Music: Give some chill/lounge music with direct play option
+- Games: Some example games that are fun to play with your friends
+
+The website should have some contact/idea box which people can use to share their thoughts
+
+The website has some social media like instagram/facebook/twitter
+
