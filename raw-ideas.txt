@@ -1,0 +1,39 @@
+
+
+
+NEW IDEA
+
+
+Tasting website
+
+Gallery/impression page (home page?)
+User experiences
+- user reviews/quotes
+
+Contact form/page
+
+Different "items" (more like pages)
+
+ITEM PROPERTIES
+Summary
+- properties of the tasting
+- food
+
+
+Practical information
+- date/time
+- amount persons
+- price/booking
+
+Tasting info
+- location
+- Drinks
+- music
+
+
+
+
+The items/tasting pages
+- Whiskey
+- Wine
+- Beer
