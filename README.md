@@ -38,17 +38,16 @@ The contacting page will be 'simple' form page, where you could provide some fee
 - As a user I want to know the target audience.
 
 # Toolings
-For this project I will use the following toolings:
-
-#### Atom
-I will use atom as the IDE to write my
+This project will use the following toolings:
 
 #### Bootstrap
-I will use the Bootstrap HTML/CSS framework in order to build the website responsive and with a nice stylish layout.
+Bootstrap is used in order to build a responsive website with nice styling.
+
+#### Pexels
+Free high quality photo's are collected from [Pexels](https://www.pexels.com/).
 
 #### Inspiration
-I will use [this](https://debut-demo.myshopify.com/) website for inspiration for design elements.
-
+The following [website](https://debut-demo.myshopify.com/) will be used for inspiration of the design elements.
 
 # Wireframe
 #### Home page mockup
