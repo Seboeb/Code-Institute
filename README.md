@@ -51,7 +51,7 @@ The following [website](https://debut-demo.myshopify.com/) will be used for insp
 
 # Wireframe
 #### Home page mockup
-![Home page wireframe](https://github.com/Seboeb/Code-Institute/blob/master/img/home-page.png)
+![Home page wireframe](https://github.com/Seboeb/Code-Institute/blob/master/assets/images/home-page.png)
 
 #### Tasting pages mockup
-![Tasting wireframe](https://github.com/Seboeb/Code-Institute/blob/master/img/tasting-pages.png)
+![Tasting wireframe](https://github.com/Seboeb/Code-Institute/blob/master/assets/images/tasting-pages.png)
