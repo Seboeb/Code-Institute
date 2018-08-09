@@ -7,11 +7,49 @@
   <title>The Tasting Experience</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
 </head>
 
 <body>
-  <header class="container-fluid">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+          <img class="logo" alt="The Tasting Experience" src="./assets/images/logo-white.png">
+        </a>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+
+
+      <!-- Navigation -->
+      <div class="navbar-collapse collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li class="menu-item"><a href="#"><span>Home</span></a></li>
+          <li class="menu-item"><a href="#"><span>Beer tasting</span></a></li>
+          <li class="menu-item"><a href="#"><span>Wine tasting</span></a></li>
+          <li class="menu-item"><a href="#"><span>Whiskey tasting</span></a></li>
+          <li class="menu-item"><a href="#"><span>Contact</span></a></li>
+          <li class="menu-item visible-xs"><a href="#"><span>Sign up</span></a></li>
+        </ul>
+
+
+        <!-- Sign up -->
+        <div class="navbar-header navbar-right hidden-xs">
+          <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#signUp">Sign up</button>
+          <p class="navbar-text"><i>Let the tasting begin...</i></p>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- <header class="container-fluid">
     <div class="row">
       <a href="index.html">
         <div class="col-md-2 logo"></div>
@@ -25,17 +63,162 @@
           <li class="menu-item"><a href="#" class="hvr-float"><span>Contact</span></a></li>
         </ul>
       </nav>
-
     </div>
+  </header> -->
 
-  </header>
-  <article>
+  <!-- Image banner -->
+  <div class="container-fluid image-banner-container">
+    <div class="opaque-overlay">&nbsp;</div>
+    <div class="row">
+      <div class="col-xs-12">
+        <section class="jumbotron">
+          <h1>This is the header whoojj</h1>
+          <h3>This is some sub text</h3>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="container">
+    <section class="description">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="description-header">
+            <h1>About us</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="description-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quibusdam quia consectetur quam distinctio vel recusandae est nisi aut iste doloribus, veniam quo vitae, quos voluptate cumque perspiciatis magni sed! Dolorem, distinctio! Rerum
+              reprehenderit maiores itaque quia, nostrum sed nobis soluta et sunt. Laborum eveniet deserunt voluptatibus in blanditiis quas iusto esse sequi illum assumenda, odit cumque voluptate unde aliquid veniam praesentium, magnam ducimus sapiente
+              aut sunt nobis quod qui asperiores accusantium? Officia incidunt laboriosam quo voluptas enim accusamus nisi, repellat, reiciendis, eius consectetur sint perspiciatis! Dolores maiores nostrum dicta molestiae dignissimos expedita perspiciatis
+              voluptatum at ipsum. Maxime, sunt ullam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="drinks-information">
+      <div class="row feature-container">
+        <div class="col-xs-12 col-sm-6">
+          <div class="small-header">
+            <h3>Tastings</h3>
+          </div>
+          <div class="feature-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique et expedita repudiandae sit ratione libero, voluptatem iusto repellat quidem perspiciatis blanditiis explicabo quae esse ipsum iste facere officiis, eum ut placeat adipisci officia. Blanditiis
+            omnis voluptates animi temporibus. Asperiores sint vero culpa enim itaque amet rerum, veniam at, dicta voluptatibus delectus error repellendus, aut velit porro facilis similique accusantium illum ratione quibusdam. Non mollitia voluptates
+            eos, molestias itaque quis rerum. Distinctio consequatur vero numquam et est ratione, quisquam vel excepturi consequuntur culpa illo reiciendis libero dolore nulla molestiae unde inventore possimus voluptatem porro at impedit odio ab! Quas
+            voluptatibus, praesentium.
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="feature-image">
+            <img src="./assets/images/tastings/alcoholic-beverages-small3.jpg" alt="Drinks" width="100%" class="img-rounded" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="location-information ">
+      <div class="row feature-container">
+        <div class="col-xs-12 col-sm-6">
+          <div class="small-header">
+            <h3>Locations</h3>
+          </div>
+          <div class="feature-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique et expedita repudiandae sit ratione libero, voluptatem iusto repellat quidem perspiciatis blanditiis explicabo quae esse ipsum iste facere officiis, eum ut placeat adipisci officia. Blanditiis
+            omnis voluptates animi temporibus. Asperiores sint vero culpa enim itaque amet rerum, veniam at, dicta voluptatibus delectus error repellendus, aut velit porro facilis similique accusantium illum ratione quibusdam. Non mollitia voluptates
+            eos, molestias itaque quis rerum. Distinctio consequatur vero numquam et est ratione, quisquam vel excepturi consequuntur culpa illo reiciendis libero dolore nulla molestiae unde inventore possimus voluptatem porro at impedit odio ab! Quas
+            voluptatibus, praesentium.
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="small-header">
+            <h3>Booking</h3>
+          </div>
+          <div class="feature-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique et expedita repudiandae sit ratione libero, voluptatem iusto repellat quidem perspiciatis blanditiis explicabo quae esse ipsum iste facere officiis, eum ut placeat adipisci officia. Blanditiis
+            omnis voluptates animi temporibus. Asperiores sint vero culpa enim itaque amet rerum, veniam at, dicta voluptatibus delectus error repellendus, aut velit porro facilis similique accusantium illum ratione quibusdam. Non mollitia voluptates
+            eos, molestias itaque quis rerum. Distinctio consequatur vero numquam et est ratione, quisquam vel excepturi consequuntur culpa illo reiciendis libero dolore nulla molestiae unde inventore possimus voluptatem porro at impedit odio ab! Quas
+            voluptatibus, praesentium.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
   </article>
-  <footer>
 
-  </footer>
+  <div class="footer-container">
+    <footer class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div>
+            <h5>Stay connected</h5>
+          </div>
+          <div>
+            <p>If you want to receive the latest news about our tastings, please subscribe!</p>
+          </div>
+          <div>
+            <form action="" class="form-inline">
+              <input type="email" class="form-control input-sm" id="subscribeEmail" placeholder="my@email.com">
+              <button class="btn btn-danger btn-sm" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <h5>Social media</h5>
+          <ul class="list-inline social-icons">
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <h5>Navigation</h5>
+          <ul class="list-unstyled navigation-links">
+            <li><a href="#"><i class="fas fa-caret-right"></i>&emsp;Home</a></li>
+            <li><a href="#"><i class="fas fa-caret-right"></i>&emsp;Beer tasting</a></li>
+            <li><a href="#"><i class="fas fa-caret-right"></i>&emsp;Wine tasting</a></li>
+            <li><a href="#"><i class="fas fa-caret-right"></i>&emsp;Whiskey tasting</a></li>
+            <li><a href="#"><i class="fas fa-caret-right"></i>&emsp;Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 contact-details">
+          <div class="ruler"></div>
+          <p><span style="font-weight:500;color:#969696">The Tasting Experience</span>&nbsp;&nbsp;&#9679;&nbsp;&nbsp;Saturnusstraat 69, 2516 AG The Hague&nbsp;&nbsp;&#9679;&nbsp;&nbsp;The Netherlands<br><i class="fas fa-phone-volume"></i>&nbsp;+(31) 070
+            390 3921&nbsp;&nbsp;&#9679;&nbsp;&nbsp;<i class="far fa-envelope-open"></i>&nbsp;<a href="mailto:info@tastingexperience.com" style="color:inherit;">info@tastingexperience.com</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
 
+  <!-- Sign up modal -->
+  <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>

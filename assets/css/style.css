@@ -1,5 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/*-------------------------------------------------------------- Media querie*/
+/* small width */
+@media (min-width: 768px) {
+  .feature-container {
+    display: flex;
+    align-items: center;
+  }
+ }
+
+ /*-------------------------------------------------------------- the rest*/
+body {
+  font-family: "Roboto","sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+section {
+  margin: 15px 0;
+}
+
+.ruler {
+  width: 80%;
+  height: 1px;
+  background-color: #6d6d6d;
+  margin: 20px auto;
+}
+
 /*-------------------------------------------------------------- Colors*/
+body {
+  color: #6d6d6d;
+}
+
+.footer-container {
+  background-color: #333333;
+}
+
+.social-icons li a i:hover {
+  color:#a5a5a5;
+}
+
+.navigation-links li a:hover {
+  color:#a5a5a5;
+}
 
 /*-------------------------------------------------------------- Header*/
 
@@ -9,14 +52,50 @@ header {
 }
 
 .logo {
-  background-image: url('../images/logo.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 100px;
+  height: 100%;
 }
 
-nav {
+.navbar {
+  background-color: rgba(255,255,255,0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 0;
+  z-index: 1;
+  border: 0;
+  height: 50px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+
+.navbar-brand {
+  padding: 5px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  border: 0;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle {
+  border: 0;
+}
+/* nav {
   margin: 0;
   padding: 0;
   height: 100px;
@@ -26,12 +105,12 @@ nav {
   height: 100%;
   margin: auto 0;
   margin-left: 100px;
-  font-family: "Exo","sans-serif";
-  font-weight: 400;
-  font-size: 16px;
-}
+  /* font-family: "Exo","sans-serif";
+  font-weight: 400; */
+  /* font-size: 16px;
+}  */
 
-.menu-item {
+/* .menu-item {
   margin: 70px 12px 0px;
   border-bottom: 1px solid #6b6b6b;
   padding-bottom: 5px;
@@ -48,4 +127,76 @@ nav {
   width: 120%;
   text-align: center;
 
+} */
+
+/*-------------------------------------------------------------- footer*/
+footer {
+  font-size: 12px;
+  padding: 15px 0 50px 0;
+}
+
+.social-icons li a i {
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #333333;
+  background-color: #777777;
+  line-height: 2em;
+  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.navigation-links li a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.contact-details {
+  text-align: center;
+}
+
+/*-------------------------------------------------------------- Image banner*/
+.image-banner-container {
+  height: 350px;
+  padding: 0;
+  background: url('../images/tastings/backyard-house-lights-small.jpg') no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.opaque-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0,0.25);
+}
+
+.jumbotron {
+  background-color: transparent;
+  color: #f2f2f2;
+}
+
+/*-------------------------------------------------------------- features*/
+.feature-container {
+}
+
+.feature-image {
+  padding: 15px;
+  position: relative;
 }
