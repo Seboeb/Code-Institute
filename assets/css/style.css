@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-/*-------------------------------------------------------------- Media querie*/
-/* small width */
-@media (min-width: 768px) {
-  .feature-container {
-    display: flex;
-    align-items: center;
-  }
- }
+
+
+
 
  /*-------------------------------------------------------------- the rest*/
+
+
 body {
   font-family: "Roboto","sans-serif";
   font-weight: 400;
@@ -30,6 +27,7 @@ section {
 /*-------------------------------------------------------------- Colors*/
 body {
   color: #6d6d6d;
+  background-color: #ffffff;
 }
 
 .footer-container {
@@ -45,94 +43,147 @@ body {
 }
 
 /*-------------------------------------------------------------- Header*/
-
-header {
-  margin: 0;
+.my-navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
   padding: 0;
+  z-index: 1;
+}
+
+.flex-container {
+  display: flex;
+  height: 70px;
+  padding: 10px 15px;
+}
+
+.flex-container div {
+  border: 0px solid black;
+}
+
+.nav-logo {
+  display: flex;
+  flex-basis: 60%;
+  order: 2;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-signin-button {
+  flex-basis: 20%;
+  text-align: right;
+}
+
+.nav-hamburger-button {
+  order: 1;
+  flex-basis: 20%;
+  font-size: 28px;
+  line-height: 50px;
+}
+
+.nav-hamburger-button a {
+  color: #6d6d6d;
+}
+
+.nav-hamburger-button a:hover {
+  color: #000000;
 }
 
 .logo {
   height: 100%;
 }
 
-.navbar {
-  background-color: rgba(255,255,255,0.25);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin-bottom: 0;
-  z-index: 1;
-  border: 0;
-  height: 50px;
-}
-
-.navbar-default .navbar-nav>li>a {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.navbar-default .navbar-text {
-  color: #ffffff;
-}
-
-.navbar-brand {
-  padding: 5px;
-}
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{
-  border: 0;
-}
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
-  background-color: transparent;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #ffffff;
-}
-
-.navbar-default .navbar-toggle {
-  border: 0;
-}
-/* nav {
+.my-navbar-list {
+  display: inline-flex;
+  justify-content: center;
   margin: 0;
-  padding: 0;
-  height: 100px;
+  height: 100%;
 }
 
-#nav {
+.menu-item {
   height: 100%;
-  margin: auto 0;
-  margin-left: 100px;
-  /* font-family: "Exo","sans-serif";
-  font-weight: 400; */
-  /* font-size: 16px;
-}  */
-
-/* .menu-item {
-  margin: 70px 12px 0px;
-  border-bottom: 1px solid #6b6b6b;
-  padding-bottom: 5px;
+  line-height: 50px;
+  padding: 0 12px !important;
 }
 
 .menu-item a {
-  width: 100%;
-  text-decoration: none;
-  color: #6b6b6b;
+  color: #6d6d6d;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.menu-item-text {
-  display: block;
-  width: 120%;
-  text-align: center;
+.menu-item a:hover,
+.menu-item a:focus {
+  text-decoration: none;
+  color: #c58a4f;
+}
 
-} */
+
+
+/*-------------------------------------------------------------- Mobile header*/
+.flex-container-mobile {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  top: 70px;
+  left: -100vw;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+
+}
+
+.menu-open {
+  opacity: 1;
+  left: 0;
+}
+
+.my-navbar-list-mobile {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.menu-item-mobile {
+  height: 100%;
+  line-height: 50px;
+}
+
+.menu-item-mobile a {
+  color: #6d6d6d;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.menu-item-mobile a:hover,
+.menu-item-mobile a:focus {
+  color: #a5a5a5;
+  text-decoration: none;
+}
+
 
 /*-------------------------------------------------------------- footer*/
 footer {
+  text-align: center;
   font-size: 12px;
   padding: 15px 0 50px 0;
+}
+
+.footer-column {
+  margin: 10px 0;
 }
 
 .social-icons li a i {
@@ -162,6 +213,7 @@ footer {
 .contact-details {
   text-align: center;
 }
+
 
 /*-------------------------------------------------------------- Image banner*/
 .image-banner-container {
@@ -200,3 +252,35 @@ footer {
   padding: 15px;
   position: relative;
 }
+
+
+/*-------------------------------------------------------------- Media querie*/
+/* small width */
+@media (min-width: 768px) {
+  .feature-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-logo {
+    order: 1;
+    flex-basis: 20%;
+  }
+
+  .nav-links {
+    order: 2;
+  }
+
+  .nav-signin-button {
+    order: 3;
+  }
+
+  .my-navbar{
+    position: static;
+  }
+
+  footer {
+    text-align: left;
+  }
+
+ }
