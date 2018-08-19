@@ -44,7 +44,7 @@ This project will use the following toolings:
 Bootstrap is used in order to build a responsive website with nice styling.
 
 #### Pexels
-Free high quality photo's are collected from [Pexels](https://www.pexels.com/).
+Free high quality photo's are collected from [Pexels](https://www.pexels.com/) and [unsplash](https://unsplash.com/).
 
 #### Inspiration
 The following [website](https://debut-demo.myshopify.com/) will be used for inspiration of the design elements.

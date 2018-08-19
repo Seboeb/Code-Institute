@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Tasting Experience</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -12,10 +13,11 @@
 </head>
 
 <body>
-  <nav class="container-fluid my-navbar">
+  <!-- Navigation -->
+  <nav class="my-navbar">
 
     <!-- Header logo -->
-    <div class="flex-container">
+    <div class="container flex-container">
       <div class="nav-logo">
         <a class="" href="/">
           <img class="logo" alt="The Tasting Experience" src="./assets/images/logo.png">
@@ -68,11 +70,11 @@
   <!-- Image banner -->
   <div class="container-fluid image-banner-container">
     <div class="opaque-overlay">&nbsp;</div>
-    <div class="row">
-      <div class="col-xs-12">
+    <div class="jumbotron-container">
+      <div>
         <section class="jumbotron">
-          <h1>This is the header whoojj</h1>
-          <h3>This is some sub text</h3>
+          <h1>The Tasting Experience</h1>
+          <h3>Let the experience starts tasting you...</h3>
         </section>
       </div>
     </div>
@@ -82,19 +84,17 @@
   <div class="container">
     <section class="description">
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-md-4">
+          <div class="feature-image">
+            <img src="./assets/images/tastings/about-us-remake.jpg" alt="About us" width="100%" />
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-8">
           <div class="description-header">
             <h1>About us</h1>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
           <div class="description-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quibusdam quia consectetur quam distinctio vel recusandae est nisi aut iste doloribus, veniam quo vitae, quos voluptate cumque perspiciatis magni sed! Dolorem, distinctio! Rerum
-              reprehenderit maiores itaque quia, nostrum sed nobis soluta et sunt. Laborum eveniet deserunt voluptatibus in blanditiis quas iusto esse sequi illum assumenda, odit cumque voluptate unde aliquid veniam praesentium, magnam ducimus sapiente
-              aut sunt nobis quod qui asperiores accusantium? Officia incidunt laboriosam quo voluptas enim accusamus nisi, repellat, reiciendis, eius consectetur sint perspiciatis! Dolores maiores nostrum dicta molestiae dignissimos expedita perspiciatis
-              voluptatum at ipsum. Maxime, sunt ullam.</p>
+            <p>Hi there, welcome to The Tasting Experience. If you want to start </p>
           </div>
         </div>
       </div>
@@ -138,10 +138,7 @@
             <h3>Booking</h3>
           </div>
           <div class="feature-content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique et expedita repudiandae sit ratione libero, voluptatem iusto repellat quidem perspiciatis blanditiis explicabo quae esse ipsum iste facere officiis, eum ut placeat adipisci officia. Blanditiis
-            omnis voluptates animi temporibus. Asperiores sint vero culpa enim itaque amet rerum, veniam at, dicta voluptatibus delectus error repellendus, aut velit porro facilis similique accusantium illum ratione quibusdam. Non mollitia voluptates
-            eos, molestias itaque quis rerum. Distinctio consequatur vero numquam et est ratione, quisquam vel excepturi consequuntur culpa illo reiciendis libero dolore nulla molestiae unde inventore possimus voluptatem porro at impedit odio ab! Quas
-            voluptatibus, praesentium.
+            <div id="calendar-booking"></div>
           </div>
         </div>
       </div>
@@ -227,6 +224,7 @@
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script>
     (function() {
@@ -236,6 +234,10 @@
       });
       $('.menu-item-mobile').bind('click', function() {
         navbarMobile.toggleClass('menu-open');
+      });
+
+      $('#calendar-booking').datepicker({
+        todayHighlight: true
       });
     })();
   </script>

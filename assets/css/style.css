@@ -34,14 +34,6 @@ body {
   background-color: #333333;
 }
 
-.social-icons li a i:hover {
-  color:#a5a5a5;
-}
-
-.navigation-links li a:hover {
-  color:#a5a5a5;
-}
-
 /*-------------------------------------------------------------- Header*/
 .my-navbar {
   width: 100%;
@@ -50,7 +42,7 @@ body {
   left: 0;
   background-color: #ffffff;
   padding: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .flex-container {
@@ -118,12 +110,16 @@ body {
   color: #6d6d6d;
   font-weight: 400;
   font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
 }
 
 .menu-item a:hover,
 .menu-item a:focus {
   text-decoration: none;
-  color: #c58a4f;
+  color: #000000;
 }
 
 
@@ -137,7 +133,6 @@ body {
   position: fixed;
   top: 70px;
   left: -100vw;
-  z-index: 1;
   justify-content: center;
   align-items: center;
   opacity: 0;
@@ -195,7 +190,7 @@ footer {
   color: #333333;
   background-color: #777777;
   line-height: 2em;
-  transition: all 0.35s ease-in-out;
+  transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -204,10 +199,18 @@ footer {
 .navigation-links li a {
   text-decoration: none;
   color: inherit;
-  transition: all 0.35s ease-in-out;
+  transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
+}
+
+.social-icons li a i:hover {
+  color:#a5a5a5;
+}
+
+.navigation-links li a:hover {
+  color:#a5a5a5;
 }
 
 .contact-details {
@@ -219,7 +222,7 @@ footer {
 .image-banner-container {
   height: 350px;
   padding: 0;
-  background: url('../images/tastings/backyard-house-lights-small.jpg') no-repeat top center fixed;
+  background: url('../images/tastings/home-header.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -228,6 +231,7 @@ footer {
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .opaque-overlay {
@@ -241,18 +245,56 @@ footer {
 
 .jumbotron {
   background-color: transparent;
-  color: #f2f2f2;
+  color: #ffffff;
+  /* color: #ff9232; */
 }
+
+.jumbotron h3 {
+  color: #45ff9a;
+}
+
+.jumbotron-container {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+
 
 /*-------------------------------------------------------------- features*/
 .feature-container {
 }
 
 .feature-image {
-  padding: 15px;
   position: relative;
 }
 
+.description-header h1 {
+  margin-top: 0;
+}
+
+/*-------------------------------------------------------------- Calendar*/
+.datepicker table tr td.today,
+.datepicker table tr td.today.disabled {
+  background-color:#bababa;
+  background-image: none;
+}
+.datepicker table tr td.today.disabled:hover,
+.datepicker table tr td.today:hover
+
+.datepicker table tr td.active,
+.datepicker table tr td.active.active {
+  background-color:#333;
+  background-image: none;
+}
+
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.today:hover,
+.datepicker table tr td.today:hover:hover {
+  background-image: none;
+  background-color: #545454;
+}
 
 /*-------------------------------------------------------------- Media querie*/
 /* small width */
@@ -265,6 +307,7 @@ footer {
   .nav-logo {
     order: 1;
     flex-basis: 20%;
+    justify-content: left;
   }
 
   .nav-links {
