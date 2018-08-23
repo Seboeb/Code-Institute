@@ -113,6 +113,10 @@ body {
   padding: 0 12px !important;
 }
 
+.menu-item-active {
+  border-bottom: 1px solid black;
+}
+
 .menu-item a {
   color: #6d6d6d;
   font-weight: 400;
@@ -385,6 +389,7 @@ footer {
 .item-select:hover {
   top: -10px;
   color: white;
+  box-shadow: 0 0px 30px rgba(0,0,30,0.2);
 }
 
 .item-select:hover  .divider-small {
