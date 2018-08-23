@@ -10,8 +10,8 @@
 body {
   font-family: "Roboto","sans-serif";
   font-weight: 400;
-  font-size: 15px;
-  line-height: 1.5em;
+  font-size: 14px;
+  line-height: 2em;
 }
 
 section {
@@ -541,6 +541,10 @@ footer {
  }
 
  @media (min-width: 992px) {
+  body {
+    font-size: 15px;
+    line-height: 1.6em;
+  }
 
    .drink-item-card {
      /* flex-basis: 20vw; */
@@ -553,3 +557,11 @@ footer {
    }
 
  }
+
+ @media (min-width: 1200px) {
+   body {
+     font-size: 16px;
+     line-height: 2em;
+   }
+
+}
