@@ -6,12 +6,19 @@
 
  /*-------------------------------------------------------------- the rest*/
 
-
 body {
   font-family: "Roboto","sans-serif";
   font-weight: 400;
   font-size: 14px;
   line-height: 2em;
+}
+
+.master-container {
+  overflow-x: hidden;
+}
+
+.freeze-scroll {
+  overflow: hidden;
 }
 
 section {
@@ -25,12 +32,58 @@ section {
   margin: 20px auto;
 }
 
+.section-extra-top-margin {
+  margin-top: 50px;
+}
 
+.section-extra-margin {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.section-divider::before,
+.section-divider::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  z-index: -1;
+	width: 110%;
+	height: 40vw;
+  background: #e2e2e2;
+	transform-origin: 0 0;
+}
+
+.section-divider::before {
+  top: 0;
+	transform: rotate(-2deg);
+  box-shadow: 0 -10px 30px rgba(0,0,30,0.15);
+  -webkit-box-shadow: 0 -10px 30px rgba(0,0,30,0.15);
+}
+
+.section-divider::after {
+  bottom: 0;
+	transform: rotate(2deg);
+  box-shadow: 0 10px 30px rgba(0,0,30,0.15);
+  -webkit-box-shadow: 0 10px 30px rgba(0,0,30,0.15);
+}
+
+.section-divider-square::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 50vw;
+  width: 50px;
+  height: 50px;
+  background: #e2e2e2;
+  border: 5px solid #f3f3f3;
+  transform-origin: 0 0;
+  transform: rotate(45deg);
+}
 
 /*-------------------------------------------------------------- Colors*/
 body {
   color: #6d6d6d;
-  background-color: #ffffff;
+  background-color: #f3f3f3;
 }
 
 .footer-container {
@@ -39,6 +92,10 @@ body {
 
 .container-wrapper--grey {
   background-color: #e2e2e2;
+}
+
+.no-background-color {
+  background-color: transparent;
 }
 
 /*-------------------------------------------------------------- Header*/
@@ -182,7 +239,7 @@ body {
 
 
 /*-------------------------------------------------------------- footer*/
-footer {
+#footer {
   text-align: center;
   font-size: 12px;
   padding: 15px 0 50px 0;
@@ -216,6 +273,10 @@ footer {
   -o-transition: all 0.2s ease-in-out;
 }
 
+.navigation-links li {
+  line-height: 2em;
+}
+
 .social-icons li a i:hover {
   color:#a5a5a5;
 }
@@ -244,13 +305,14 @@ footer {
   position: relative;
 }
 
+
 .opaque-overlay {
   position: absolute;
   top: 0px;
   left: 0px;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0,0.25);
+  background-color: rgba(255, 255, 255,0.1);
 }
 
 .jumbotron {
@@ -273,11 +335,16 @@ footer {
 
 /*-------------------------------------------------------------- features*/
 .feature-container {
+
+}
+
+.vertical-center {
 }
 
 .container-wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .feature-image {
@@ -452,6 +519,52 @@ footer {
   color: #b1b1b1;
 }
 
+/*-------------------------------------------------------------- User Reviews*/
+.user-review {
+  border-color: #9c9c9c;
+  height: 100%;
+  margin: 20px 0;
+}
+
+.review-card {
+  display: flex;
+  display: relative;
+  margin: 20px 0;
+  align-items: center;
+  background-color: white;
+  box-shadow: 10px 10px 10px  rgba(0,0,30,0.3);
+  -webkit-box-shadow: 10px 10px 10px  rgba(0,0,30,0.2);
+}
+
+.review-image {
+  flex-basis: 100px;
+  padding: 10px;
+}
+.review-body {
+  flex-basis: auto;
+  transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+}
+
+.review-body:hover {
+  color:  rgb(160, 101, 37);
+}
+
+.review-quote-icon {
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+  font-size: 30px;
+}
+
+.review-stars{
+  margin-top: 15px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
 /*-------------------------------------------------------------- Block divider*/
 .divider-large {
   width: 50px;
@@ -519,7 +632,7 @@ footer {
     position: static;
   }
 
-  footer {
+  #footer {
     text-align: left;
   }
 
@@ -532,24 +645,29 @@ footer {
   .drink-item-card {
     /* flex-basis: 20vw; */
     flex-basis: 200px;
-    background-color: white;
   }
 
   .drink-image {
      height: 200px;
   }
+
+  body {
+    font-size: 16px;
+    line-height: 2em;
+  }
+
+  .vertical-center {
+    display: flex;
+    align-items: center;
+  }
+
  }
 
  @media (min-width: 992px) {
-  body {
-    font-size: 15px;
-    line-height: 1.6em;
-  }
 
    .drink-item-card {
      /* flex-basis: 20vw; */
      flex-basis: 240px;
-     background-color: white;
    }
 
    .drink-image {
@@ -557,11 +675,3 @@ footer {
    }
 
  }
-
- @media (min-width: 1200px) {
-   body {
-     font-size: 16px;
-     line-height: 2em;
-   }
-
-}
