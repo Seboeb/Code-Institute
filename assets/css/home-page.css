@@ -1,0 +1,252 @@
+/*-------------------------------------------------------------- Image banner*/
+.image-banner-container {
+  height: 350px;
+  padding: 0;
+  background: url('../images/tastings/home-header.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.jumbotron-title {
+}
+
+.jumbotron-subtitle {
+  color: #45ff9a;
+}
+
+
+/*-------------------------------------------------------------- Items*/
+.drinks-container {
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.drink-item-card {
+  /* flex-basis: 20vw; */
+  flex-basis: 100vw;
+  background-color: white;
+  margin: 15px 0;
+}
+
+.drink-item-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.drink-image {
+   height: 100vw;
+}
+
+.beer-image {
+  background: url('../images/tastings/beer-item-card.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.wine-image {
+  background: url('../images/tastings/wine-item-card.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.whiskey-image {
+  background: url('../images/tastings/whiskey-item-card.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.drink-content {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.8em;
+  padding: 10px;
+}
+
+.drink-content h4 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 0;
+
+}
+
+.item-select {
+  position: relative;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+.item-select:hover {
+  top: -10px;
+  color: white;
+  box-shadow: 0 0px 30px rgba(0,0,30,0.2);
+}
+
+.item-select:hover  .divider-small {
+  background-color: white;
+}
+
+.item-select::before {
+  content: "";
+  background-color: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.item-select:hover::before{
+  /* -webkit-transform: scaleY(1);
+  transform: scaleY(1); */
+  background-color: #a0a0a0;
+  -webkit-transition-timing-function: cubic-bezier(0.43, 0.77, 0.37, 0.97);
+  transition-timing-function:  cubic-bezier(0.43, 0.77, 0.37, 0.97);
+}
+
+.item-button {
+  background-color: transparent;
+  color:inherit;
+  font-size: 16px;
+  margin: 20px auto;
+
+}
+
+/*-------------------------------------------------------------- Locations*/
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  left:0;
+  right: 0;
+}
+
+.carousel-caption-wrapper {
+  width: auto;
+  max-width: 75%;
+  margin: auto;
+}
+
+.carousel-location {
+  font-size: 12px;
+  color: #b1b1b1;
+}
+
+/*-------------------------------------------------------------- User Reviews*/
+.user-review {
+  border-color: #9c9c9c;
+  height: 100%;
+  margin: 20px 0;
+}
+
+.review-card {
+  display: flex;
+  display: relative;
+  margin: 20px 0;
+  align-items: center;
+  background-color: white;
+  box-shadow: 10px 10px 10px  rgba(0,0,30,0.3);
+  -webkit-box-shadow: 10px 10px 10px  rgba(0,0,30,0.2);
+}
+
+.review-image {
+  flex-basis: 100px;
+  padding: 10px;
+}
+
+.review-body {
+  flex-basis: auto;
+  transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+}
+
+.review-body:hover {
+  color:  rgb(160, 101, 37);
+}
+
+.review-quote-icon {
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+  font-size: 30px;
+}
+
+.review-stars{
+  margin-top: 15px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+
+
+/*-------------------------------------------------------------- Media queries*/
+@media (min-width: 768px) {
+  .drinks-container {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .drink-item-card {
+    /* flex-basis: 20vw; */
+    flex-basis: 200px;
+  }
+
+  .drink-image {
+     height: 200px;
+  }
+
+ }
+
+@media (min-width: 992px) {
+
+  .drink-item-card {
+    /* flex-basis: 20vw; */
+    flex-basis: 240px;
+  }
+
+  .drink-image {
+     height: 240px;
+  }
+
+}

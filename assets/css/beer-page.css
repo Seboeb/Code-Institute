@@ -1,0 +1,62 @@
+/*-------------------------------------------------------------- Image banner*/
+.image-banner-container-beer {
+  height: 350px;
+  padding: 0;
+  background: url('../images/tastings/beer-header2.jpg') no-repeat center 70%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.jumbotron {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.jumbotron-title {
+}
+
+.jumbotron-subtitle {
+  color: #ffec56;
+  font-style: italic;
+}
+
+.jumbotron-subtitle footer {
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.jumbotron-subtitle footer::before {
+  content: '\2014 \00A0';
+}
+
+
+
+/*-------------------------------------------------------------- Calendar*/
+.datepicker table tr td.today,
+.datepicker table tr td.today.disabled {
+  background-color:#bababa;
+  background-image: none;
+}
+.datepicker table tr td.today.disabled:hover,
+.datepicker table tr td.today:hover
+
+.datepicker table tr td.active,
+.datepicker table tr td.active.active {
+  background-color:#333;
+  background-image: none;
+}
+
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.today:hover,
+.datepicker table tr td.today:hover:hover {
+  background-image: none;
+  background-color: #545454;
+}
