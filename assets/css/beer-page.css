@@ -37,6 +37,15 @@
 }
 
 
+/*-------------------------------------------------------------- Images */
+.image-right {
+  float: right;
+}
+
+.image-left {
+  float: left;
+}
+
 
 /*-------------------------------------------------------------- Calendar*/
 .datepicker table tr td.today,
