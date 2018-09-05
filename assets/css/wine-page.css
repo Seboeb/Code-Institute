@@ -2,7 +2,7 @@
 .image-banner-container-beer {
   height: 350px;
   padding: 0;
-  background: url('../images/tastings/beer/beer-header2-small.jpg') no-repeat center 70%;
+  background: url('../images/tastings/wine/wine-header-small.jpg') no-repeat center 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,14 +14,14 @@
 }
 
 .jumbotron {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 81, 144, 0.5);
 }
 
 .jumbotron-title {
 }
 
 .jumbotron-subtitle {
-  color: #ffec56;
+  color: #c8e1ff;
   font-style: italic;
 }
 
@@ -61,19 +61,19 @@
   padding-left: 20px;
 }
 
-.container-beer-info {
+.container-wine-info {
   margin-top: 20px;
   width: 100%;
   height: 235px;
 }
 
-.beers-list {
+.wine-list {
   padding: 0;
   list-style: none;
   margin: 0;
 }
 
-.beer-div {
+.wine-div {
   display: inline-block;
   float: left;
   width: 100%;
@@ -81,19 +81,19 @@
   height: 100%;
 }
 
-.beer1-color-div {
-  color: #826a4c;
-  background: #fbd8aa;
+.wine1-color-div {
+  color: #5f4d4a;
+  background: #e4aca2;
 }
 
-.beer2-color-div {
-  color: #21201c;
-  background: #afa896;
+.wine2-color-div {
+  color: #273133;
+  background: #95b4bb;
 }
 
-.beer3-color-div {
-  color: #25462a;
-  background: #84ca8e;
+.wine3-color-div {
+  color: #67553a;
+  background: #eec78e;
 }
 
 .row-height {
@@ -113,9 +113,10 @@
   margin-top: 10px;
 }
 
-.label-grey {
-  background-color: #afa896;
+.label-pink {
+  background-color: #d49387;
 }
+
 /*-------------------------------------------------------------- Book you tasting*/
 .center-div {
   text-align: center;
@@ -167,7 +168,7 @@
     height: 530px;
   }
 
-  .container-beer-info {
+  .container-wine-info {
     position: absolute;
     bottom: 0;
   }
@@ -176,7 +177,7 @@
  }
 
  @media (min-width: 768px) {
-   .beer-div {
+   .wine-div {
      width: 250px;
    }
 

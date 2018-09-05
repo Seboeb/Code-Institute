@@ -2,7 +2,7 @@
 .image-banner-container {
   height: 350px;
   padding: 0;
-  background: url('../images/tastings/home-header.jpg') no-repeat center center;
+  background: url('../images/tastings/home-header-small.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
