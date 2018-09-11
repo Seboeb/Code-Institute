@@ -1,8 +1,8 @@
 /*-------------------------------------------------------------- Image banner*/
-.image-banner-container-beer {
+.image-banner-container-contact {
   height: 350px;
   padding: 0;
-  background: url('../images/tastings/whiskey/whiskey-heade2r-small.jpg') no-repeat center 50%;
+  background: url('../images/tastings/contact/header-small.jpg') no-repeat center 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,14 +14,15 @@
 }
 
 .jumbotron {
-  background-color: rgba(124, 65, 24, 0.5);
+  background-color: rgba(193, 157, 123, 0.25);
 }
 
 .jumbotron-title {
 }
 
 .jumbotron-subtitle {
-  color: #ffe7bf;
+  /* color: #ffe7bf; */
+  color: white;
   font-style: italic;
 }
 
@@ -35,154 +36,3 @@
 .jumbotron-subtitle footer::before {
   content: '\2014 \00A0';
 }
-
-
-/*-------------------------------------------------------------- Images */
-.image-right {
-  float: right;
-}
-
-.image-left {
-  float: left;
-}
-
-/*-------------------------------------------------------------- Bookings */
-.booking-item-left {
-  text-align: justify;
-  background: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.booking-item-right {
-  text-align: justify;
-  background: white;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.container-whiskey-info {
-  margin-top: 20px;
-  width: 100%;
-  height: 235px;
-}
-
-.whiskey-list {
-  padding: 0;
-  list-style: none;
-  margin: 0;
-}
-
-.whiskey-div {
-  display: inline-block;
-  float: left;
-  width: 100%;
-  padding-left: 20px;
-  height: 100%;
-}
-
-.whiskey1-color-div {
-  color: #464e39;
-  background: #afbd99;
-}
-
-.whiskey2-color-div {
-  color: #273133;
-  background: #9c9c9c
-}
-
-.whiskey3-color-div {
-  color: #5a3e29;
-  background: #efa064;
-}
-
-.row-height {
-
-}
-
-.column-height {
-  height: 100%;
-}
-
-.book-now {
-  display: inline-block;
-  width: 250px;
-  float:left;
-  padding-left: 20px;
-  height: 100%;
-  margin-top: 10px;
-}
-
-.label-grey {
-  background-color: #9c9c9c;
-}
-
-/*-------------------------------------------------------------- Book you tasting*/
-.center-div {
-  text-align: center;
-}
-
-#book-tasting {
-  margin-bottom: 40px;
-}
-
-/*-------------------------------------------------------------- Calendar*/
-.datepicker table tr td.today,
-.datepicker table tr td.today.disabled {
-  background-color:#bababa;
-  background-image: none;
-}
-.datepicker table tr td.today.disabled:hover,
-.datepicker table tr td.today:hover
-
-.datepicker table tr td.active,
-.datepicker table tr td.active.active {
-  background-color:#333;
-  background-image: none;
-}
-
-.datepicker table tr td.active:hover,
-.datepicker table tr td.active:hover.active,
-.datepicker table tr td.today:hover,
-.datepicker table tr td.today:hover:hover {
-  background-image: none;
-  background-color: #545454;
-}
-
-.datepicker {
-  display: inline-block !important;
-}
-
-
-/*-------------------------------------------------------------- Media queries*/
-@media (min-width: 1200px) {
-  .booking-item-left {
-    padding-right: 0;
-  }
-
-  .booking-item-right {
-    padding-left: 0;
-  }
-
-  .row-height {
-    height: 530px;
-  }
-
-  .container-whiskey-info {
-    position: absolute;
-    bottom: 0;
-  }
-
-
- }
-
- @media (min-width: 768px) {
-   .whiskey-div {
-     width: 250px;
-   }
-
-   .book-now {
-     margin-top: 0;
-   }
-
-  }

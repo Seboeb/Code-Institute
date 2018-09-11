@@ -241,8 +241,16 @@ body {
   padding: 15px 0 50px 0;
 }
 
+.subscribe-btn {
+  color: #f3f3f3;
+  background-color: #777777;
+  border-color: #4c4c4c;
+}
+
+
 .footer-column {
   margin: 10px 0;
+  line-height: 1.6em;
 }
 
 .social-icons li a i {
@@ -283,6 +291,7 @@ body {
 
 .contact-details {
   text-align: center;
+  line-height: 1.6em;
 }
 
 
